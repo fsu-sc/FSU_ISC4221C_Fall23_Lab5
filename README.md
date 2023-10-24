@@ -2,6 +2,9 @@
 Lab to test image manipulation
 # Programming Assignment: Image Manipulation
 
+You can create one or several python files with your answers. But you must provide a self contained report where you explain all your answers. 
+
+
 ## Prerequisites:
 - Basic understanding of Python programming
 - Familiarity with libraries such as OpenCV or PIL for image processing
@@ -13,7 +16,6 @@ Lab to test image manipulation
 - NumPy
 - Matplotlib (for plotting histograms and images)
 
----
 
 ## Question 1: Image Formats Conversion (10 pts)
 
@@ -24,7 +26,6 @@ Write a Python program that converts an image from one format to another (e.g., 
 - **Output:** Path where the converted image will be saved
 - **Supported formats:** JPG, PNG
 
----
 
 ## Question 2: Image Histogram Plotting
 
@@ -38,8 +39,9 @@ Where $H(i)$ is the height of the histogram at intensity $i$.
 **Requirements:**
 - Should work on grayscale and color images
 - If it's a color image, plot histograms for each channel (R, G, B)
+- In your report show the results of your histograms for the images `rainbow.png` or `rainbow2.png` and
+for `cave.png`
 
----
 
 ## Question 3: Histogram Stretching
 
@@ -47,13 +49,13 @@ Implement histogram stretching to enhance the contrast of an image.
 
 **Mathematical Model:**
 $I_{\text{out}} = \frac{(I_{\text{in}} - \text{min})}{(\text{max} - \text{min})} \times (L-1)$
-Where \(I_{\text{in}}\) and \(I_{\text{out}}\) are the input and output intensities, \(\text{min}\) and \(\text{max}\) are the minimum and maximum intensities in the input image, and \(L\) is the number of intensity levels.
+Where $I_{\text{in}}$ and $I_{\text{out}}$ are the input and output intensities, $\text{min}$ and $\text{max}$ are the minimum and maximum intensities in the input image, and $L$ is the number of intensity levels.
 
 **Requirements:**
 - **Input:** Grayscale image
 - **Output:** Grayscale image with enhanced contrast
 
----
+In your report show your results for the image `cave_badhist.png`.
 
 ## Question 4: Image Filtering
 
@@ -62,26 +64,19 @@ Implement the Sobel filter, mean filter, and median filter, and apply them to an
 **Mathematical Models:**
 
 - **Sobel filter**: 
-\[
-G_x = \begin{pmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{pmatrix} * I,
-\]
-\[
-G_y = \begin{pmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{pmatrix} * I
-\]
+$G_x = \begin{pmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{pmatrix} * I$,
+$G_y = \begin{pmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{pmatrix} * I$
 - **Mean filter**: 
-\[
-I_{\text{out}} = \frac{1}{9} \sum_{i,j \in \text{kernel}} I_{\text{in}}(i,j)
-\]
+$I_{\text{out}} = \frac{1}{9} \sum_{i,j \in \text{kernel}} I_{\text{in}}(i,j)$ or
+$G_y = \begin{pmatrix}  \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \\ \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \\ \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \end{pmatrix} * I$
 - **Median filter**: 
-\[
-I_{\text{out}} = \text{median}(I_{\text{in}}(i,j) \text{ for } i,j \in \text{kernel})
-\]
+$I_{\text{out}} = \text{median}(I_{\text{in}}(i,j) \text{ for } i,j \in \text{3x3 kernel})$
 
 **Requirements:**
 - **Input:** Grayscale image
 - **Output:** Filtered image
 - Implement each filter as a separate function
-```
----
 
-Feel free to adapt this assignment as needed for your class.
+Test your filters with: 
+- Sobel filter: `books.png`
+- Mean and median filter: `noise.png`
