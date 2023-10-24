@@ -65,17 +65,14 @@ Implement the Sobel filter, mean filter, and median filter, and apply them to an
 
 - **Sobel filter**: 
 
-$G_x = \begin{pmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{pmatrix} * I$,
-$G_y = \begin{pmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{pmatrix} * I$
+![matrix](imgs/sobel1.png)
+![matrix](imgs/sobel2.png)
 
 - **Mean filter**: \\ 
 
 $I_{\text{out}} = \frac{1}{9} \sum_{i,j \in \text{kernel}} I_{\text{in}}(i,j)$ 
 
 ![matrix](imgs/CodeCogsEqn.png)
-
-
-$G_y = \begin{pmatrix}  \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \\ \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \\ \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \end{pmatrix} * I$
 
 - **Median filter**: \\
 
