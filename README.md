@@ -63,7 +63,7 @@ Implement the Sobel filter, mean filter, and median filter, and apply them to an
 
 **Mathematical Models:**
 
-- **Sobel filter**: \\ 
+- **Sobel filter**: 
 
 $G_x = \begin{pmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{pmatrix} * I$,
 $G_y = \begin{pmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{pmatrix} * I$
