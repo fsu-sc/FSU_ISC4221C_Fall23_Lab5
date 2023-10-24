@@ -1,18 +1,18 @@
 # FSU_ISC4221C_Fall23_Lab5
-Lab to test image manipulation
+
 # Programming Assignment: Image Manipulation
 
-You can create one or several python files with your answers. But you must provide a self contained report where you explain all your answers. 
+You can create one or several python files with your answers. But you must provide a self contained report where you explain what you did.
 
 
-## Prerequisites:
+## Topics:
 - Basic understanding of Python programming
 - Familiarity with libraries such as OpenCV or PIL for image processing
 - Knowledge of image formats, histograms, and image filters
 
 ## Tools:
 - Python 3.x
-- OpenCV (or PIL)
+- PIL or ImageIO (Talk to the professor if you want to use other library like OpenCV)
 - NumPy
 - Matplotlib (for plotting histograms and images)
 
@@ -27,7 +27,7 @@ Write a Python program that converts an image from one format to another (e.g., 
 - **Supported formats:** JPG, PNG
 
 
-## Question 2: Image Histogram Plotting
+## Question 2: Image Histogram Plotting (15 pts)
 
 Write a function that takes an image and plots its histogram. 
 
@@ -43,7 +43,7 @@ Where $H(i)$ is the height of the histogram at intensity $i$.
 for `cave.png`
 
 
-## Question 3: Histogram Stretching
+## Question 3: Histogram Stretching (15 pts)
 
 Implement histogram stretching to enhance the contrast of an image.
 
@@ -57,7 +57,7 @@ Where $I_{\text{in}}$ and $I_{\text{out}}$ are the input and output intensities,
 
 In your report show your results for the image `cave_badhist.png`.
 
-## Question 4: Image Filtering
+## Question 4: Image Filtering (20 pts)
 
 Implement the Sobel filter, mean filter, and median filter, and apply them to an input image.
 
