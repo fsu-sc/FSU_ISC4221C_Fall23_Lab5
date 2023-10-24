@@ -68,13 +68,15 @@ Implement the Sobel filter, mean filter, and median filter, and apply them to an
 ![matrix](imgs/sobel1.png)
 ![matrix](imgs/sobel2.png)
 
-- **Mean filter**: \\ 
+Your final output may be obtained by combining the results of the two filters above.
+
+- **Mean filter**: 
 
 $I_{\text{out}} = \frac{1}{9} \sum_{i,j \in \text{kernel}} I_{\text{in}}(i,j)$ 
 
 ![matrix](imgs/CodeCogsEqn.png)
 
-- **Median filter**: \\
+- **Median filter**: 
 
 $I_{\text{out}} = \text{median}(I_{\text{in}}(i,j) \text{ for } i,j \in \text{3x3 kernel})$
 
