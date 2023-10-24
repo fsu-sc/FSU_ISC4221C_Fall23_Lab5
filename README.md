@@ -70,9 +70,9 @@ $G_y = \begin{pmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{pmatrix} * I$
 
 - **Mean filter**: \\ 
 
-$I_{\text{out}} = \frac{1}{9} \sum_{i,j \in \text{kernel}} I_{\text{in}}(i,j)$ or
+$I_{\text{out}} = \frac{1}{9} \sum_{i,j \in \text{kernel}} I_{\text{in}}(i,j)$ 
 
-![matrix](https://latex.codecogs.com/svg.image?&space;G_y=\begin{pmatrix}\frac{1}{9}&\frac{1}{9}&\frac{1}{9}\frac{1}{9}&\frac{1}{9}&\frac{1}{9}\frac{1}{9}&\frac{1}{9}&\frac{1}{9}\end{pmatrix}*I&space;)
+![matrix](imgs/matrix.svg)
 
 
 $G_y = \begin{pmatrix}  \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \\ \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \\ \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \end{pmatrix} * I$
