@@ -39,7 +39,7 @@ Where $H(i)$ is the height of the histogram at intensity $i$.
 **Requirements:**
 - Should work on grayscale and color images
 - If it's a color image, plot histograms for each channel (R, G, B)
-- In your report show the results of your histograms for the images `rainbow.png` or `rainbow2.png` and
+- In your report show the results of your histograms for the images `rainbow.png`, `rainbow2.png` and
 for `cave.png`
 
 
@@ -63,13 +63,13 @@ Implement the Sobel filter, mean filter, and median filter, and apply them to an
 
 **Mathematical Models:**
 
-- **Sobel filter**: 
+- **Sobel filter**: \\ 
 $G_x = \begin{pmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{pmatrix} * I$,
 $G_y = \begin{pmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{pmatrix} * I$
-- **Mean filter**: 
+- **Mean filter**: \\ 
 $I_{\text{out}} = \frac{1}{9} \sum_{i,j \in \text{kernel}} I_{\text{in}}(i,j)$ or
 $G_y = \begin{pmatrix}  \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \\ \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \\ \frac{1}{9} &  \frac{1}{9} & \frac{1}{9} \end{pmatrix} * I$
-- **Median filter**: 
+- **Median filter**: \\
 $I_{\text{out}} = \text{median}(I_{\text{in}}(i,j) \text{ for } i,j \in \text{3x3 kernel})$
 
 **Requirements:**
